@@ -16,7 +16,7 @@ int b=sc.nextInt();
 try
 {
 AddRem remobj=(AddRem)Naming.lookup("rmi://"+host+"/AddRem");
-System.out.println(remote.addNum(a,b));
+System.out.println(remobj.addNum(a,b));
 }
 catch(RemoteException re)
 {
